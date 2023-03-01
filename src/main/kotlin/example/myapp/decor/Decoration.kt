@@ -11,7 +11,7 @@ fun makeDecorations() {
     println(decoration3)
     println (decoration1.equals(decoration2))
     println (decoration3.equals(decoration2))
-}*/
+}
 fun main(){
     makeDecorations()
 }
@@ -30,4 +30,15 @@ fun makeDecorations() {
     println(rock)
     println(wood)
     println(diver)
+}*/
+class Choice {
+    companion object {
+        var name: String = "lyric"
+        fun showDescription(name:String) = println("My favorite $name")
+    }
+}
+fun main() {
+    println(Choice.name)
+    Choice.showDescription("pick")
+    Choice.showDescription("selection")
 }
